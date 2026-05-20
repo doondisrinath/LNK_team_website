@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lalitha Nrutya Kalakshetram - Enquiry</title>
+<!-- FONT AWESOME -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+
+<link href="assets/css/style.css" rel="stylesheet"/></head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="nav-logo">
+<!-- DANCER LOGO -->
+<img alt="Dancer Logo" class="logo-icon" src="assets/images/images/logo without text.png"/>
+<!-- TEXT LOGO -->
+<img alt="Lalitha Logo" class="logo-text-img" src="assets/images/images/logo text.png"/>
+</div>
+<div class="nav-links">
+<a href="index.html">
+        Home
+      </a>
+<a href="about.html">
+        About Us
+      </a>
+<div class="dropdown">
+<a href="#">
+          Classes
+        </a>
+<div class="dropdown-content">
+<a href="kuchipudi.html">
+            Kuchipudi
+          </a>
+<div class="sub-dropdown">
+<button class="folk-btn">
+              Folk ▸
+            </button>
+<div class="sub-dropdown-content">
+<a href="tfolk.html">
+                Traditional Folk
+              </a>
+<a href="vfolk.html">
+                Village Folk
+              </a>
+</div>
+</div>
+</div>
+</div>
+<a href="gallery.html">
+        Gallery
+      </a>
+<a href="events.html">
+        Events
+      </a>
+<a href="contactus.html">
+        Contact
+      </a>
+<a class="enquire-btn active" href="query.html">
+        Enquire Now
+      </a>
+</div>
+</nav>
+<!-- MAIN -->
+<div class="main-container">
+<div class="query-box">
+<div class="top-icon">
+<i class="fa-solid fa-envelope-open-text"></i>
+</div>
+<h1>Enquiry Form</h1>
+<p>
+        Start your dance journey with Lalitha Nrutya Kalakshetram.
+        Send your enquiry and we’ll contact you soon.
+      </p>
+<!-- FORM -->
+<form action="https://api.web3forms.com/submit" method="POST">
+<input name="access_key" type="hidden" value="a92dc513-aa4f-4aed-a152-53198eec3929"/>
+<!-- NAME -->
+<div class="input-box">
+<input name="name" placeholder="Full Name" required="" type="text"/>
+</div>
+<!-- EMAIL -->
+<div class="input-box">
+<input name="email" placeholder="Email Address" required="" type="email"/>
+</div>
+<!-- PHONE -->
+<div class="input-box">
+<input name="phone" placeholder="Phone Number" required="" type="tel"/>
+</div>
+<!-- COURSE -->
+<div class="input-box">
+<select name="course" required="">
+<option value="">
+              Select Course
+            </option>
+<option>
+              Kuchipudi
+            </option>
+<option>
+              Traditional Folk
+            </option>
+<option>
+              Village Folk
+            </option>
+</select>
+</div>
+<!-- MODE -->
+<div class="input-box">
+<select name="mode" required="">
+<option value="">
+              Select Class Mode
+            </option>
+<option>
+              Online
+            </option>
+<option>
+              Offline
+            </option>
+</select>
+</div>
+<!-- QUERY -->
+<div class="input-box">
+<textarea name="query" placeholder="Enter Your Query"></textarea>
+</div>
+<!-- SUBMIT -->
+<button class="submit-btn" type="submit">
+
+          Submit Enquiry
+
+        </button>
+</form>
+</div>
+</div>
+</body>
+</html>
