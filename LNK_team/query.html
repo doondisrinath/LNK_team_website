@@ -8,70 +8,82 @@
 <!-- FONT AWESOME -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 
-<link href="assets/css/style.css" rel="stylesheet"/></head>
-<body>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="assets/css/site-shared.css" rel="stylesheet"/>
+</head>
+<body class="site-page query-page">
 <!-- NAVBAR -->
-<nav class="navbar">
-<div class="nav-logo">
-<!-- DANCER LOGO -->
-<img alt="Dancer Logo" class="logo-icon" src="assets/images/images/logo without text.png"/>
-<!-- TEXT LOGO -->
-<img alt="Lalitha Logo" class="logo-text-img" src="assets/images/images/logo text.png"/>
-</div>
+<nav aria-label="Primary navigation" class="navbar site-navbar">
+<a aria-label="Lalitha Nrutya Kalakshetram home" class="nav-logo" href="index.html">
+<img alt="Lalitha Nrutya Kalakshetram dancer logo" class="logo-icon" src="assets/images/images/logo without text.png"/>
+<img alt="Lalitha Nrutya Kalakshetram" class="logo-text-img" src="assets/images/images/logo text.png"/>
+</a>
 <div class="nav-links">
-<a href="index.html">
-        Home
-      </a>
-<a href="about.html">
-        About Us
-      </a>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
 <div class="dropdown">
-<a href="#">
-          Classes
-        </a>
+<a href="kuchipudi.html">Classes</a>
 <div class="dropdown-content">
-<a href="kuchipudi.html">
-            Kuchipudi
-          </a>
+<a href="kuchipudi.html">Kuchipudi</a>
 <div class="sub-dropdown">
-<button class="folk-btn">
-              Folk ▸
-            </button>
+<button class="folk-btn" type="button">Folk &#9656;</button>
 <div class="sub-dropdown-content">
-<a href="tfolk.html">
-                Traditional Folk
-              </a>
-<a href="vfolk.html">
-                Village Folk
-              </a>
+<a href="tfolk.html">Traditional Folk</a>
+<a href="vfolk.html">Village Folk</a>
 </div>
 </div>
 </div>
 </div>
-<a href="gallery.html">
-        Gallery
-      </a>
-<a href="events.html">
-        Events
-      </a>
-<a href="contactus.html">
-        Contact
-      </a>
-<a class="enquire-btn active" href="query.html">
-        Enquire Now
-      </a>
+<a href="gallery.html">Gallery</a>
+<a href="events.html">Events</a>
+<a href="contactus.html">Contact</a>
+<a class="enquire-btn active" href="query.html">Enquire Now</a>
 </div>
+<a class="mobile-enquire-btn enquire-btn" href="query.html">Enquire</a>
+<button aria-label="Toggle navigation menu" class="nav-toggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
 </nav>
 <!-- MAIN -->
-<div class="main-container">
+<div class="main-container query-main">
+<div class="query-layout">
+<section class="query-intro-panel" aria-label="Admission enquiry details">
+<p class="query-kicker">Admissions enquiry</p>
+<h1>Find the right dance batch for your child.</h1>
+<p>
+Share a few details and the academy will guide you toward the right class stream, location, and batch timing.
+</p>
+<div class="query-info-grid">
+<div>
+<span>01</span>
+<strong>Choose a style</strong>
+<p>Kuchipudi, traditional folk, or village folk.</p>
+</div>
+<div>
+<span>02</span>
+<strong>Pick a location</strong>
+<p>Vijayawada, Tadepalli, or Mangalagiri.</p>
+</div>
+<div>
+<span>03</span>
+<strong>Start steadily</strong>
+<p>Begin with foundation, rhythm, and stage confidence.</p>
+</div>
+</div>
+<div class="query-contact-strip">
+<a href="tel:+916302255025">Call +91 6302255025</a>
+<a href="https://wa.me/916302255025" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+</section>
 <div class="query-box">
 <div class="top-icon">
 <i class="fa-solid fa-envelope-open-text"></i>
 </div>
-<h1>Enquiry Form</h1>
-<p>
-        Start your dance journey with Lalitha Nrutya Kalakshetram.
-        Send your enquiry and we’ll contact you soon.
+<h2>Enquiry Form</h2>
+<p class="query-form-note">
+        Fill this form and we will contact you soon with suitable class options.
       </p>
 <!-- FORM -->
 <form action="https://api.web3forms.com/submit" method="POST">
@@ -79,6 +91,10 @@
 <!-- NAME -->
 <div class="input-box">
 <input name="name" placeholder="Full Name" required="" type="text"/>
+</div>
+<!-- STUDENT AGE -->
+<div class="input-box">
+<input max="80" min="3" name="student_age" placeholder="Student Age" type="number"/>
 </div>
 <!-- EMAIL -->
 <div class="input-box">
@@ -102,6 +118,23 @@
             </option>
 <option>
               Village Folk
+            </option>
+</select>
+</div>
+<!-- LOCATION -->
+<div class="input-box">
+<select name="location" required="">
+<option value="">
+              Preferred Location
+            </option>
+<option>
+              Singh Nagar, Vijayawada
+            </option>
+<option>
+              Tadepalli
+            </option>
+<option>
+              Mangalagiri
             </option>
 </select>
 </div>
@@ -132,5 +165,46 @@
 </form>
 </div>
 </div>
+</div>
+<!-- FOOTER -->
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-brand">
+<img alt="Lalitha Nrutya Kalakshetram dancer logo" src="assets/images/images/logo without text.png"/>
+<div>
+<strong>Lalitha Nrutya Kalakshetram</strong>
+<span>Kuchipudi &amp; Folk Dance Academy</span>
+</div>
+</div>
+<div class="footer-links" aria-label="Footer navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="kuchipudi.html">Kuchipudi</a>
+<a href="tfolk.html">Traditional Folk</a>
+<a href="vfolk.html">Village Folk</a>
+<a href="gallery.html">Gallery</a>
+<a href="events.html">Events</a>
+<a href="contactus.html">Contact</a>
+</div>
+<div class="footer-contact">
+<a href="tel:+916302255025">+91 6302255025</a>
+<a href="https://wa.me/916302255025" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+<span>Vijayawada, Tadepalli, and Mangalagiri</span>
+</div>
+</div>
+<div class="footer-bottom">&copy; 2026 Lalitha Nrutya Kalakshetram. All Rights Reserved.</div>
+</footer>
+<script src="assets/js/site-animations.js"></script>
+<script>
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("mobile-active");
+    navToggle.classList.toggle("active");
+  });
+}
+</script>
 </body>
 </html>

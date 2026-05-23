@@ -8,84 +8,74 @@
 <!-- FONT AWESOME -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
 
-<link href="assets/css/style.css" rel="stylesheet"/></head>
-<body>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="assets/css/site-shared.css" rel="stylesheet"/>
+</head>
+<body class="site-page events-page">
 <!-- NAVBAR -->
-<nav class="navbar">
-<div class="nav-logo">
-<img class="logo-icon" src="assets/images/images/logo without text.png"/>
-<img class="logo-text-img" src="assets/images/images/logo text.png"/>
-</div>
+<nav aria-label="Primary navigation" class="navbar site-navbar">
+<a aria-label="Lalitha Nrutya Kalakshetram home" class="nav-logo" href="index.html">
+<img alt="Lalitha Nrutya Kalakshetram dancer logo" class="logo-icon" src="assets/images/images/logo without text.png"/>
+<img alt="Lalitha Nrutya Kalakshetram" class="logo-text-img" src="assets/images/images/logo text.png"/>
+</a>
 <div class="nav-links">
-<a href="index.html">
-        Home
-      </a>
-<a href="about.html">
-        About Us
-      </a>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
 <div class="dropdown">
-<a href="#">
-          Classes
-        </a>
+<a href="kuchipudi.html">Classes</a>
 <div class="dropdown-content">
-<a href="kuchipudi.html">
-            Kuchipudi
-          </a>
+<a href="kuchipudi.html">Kuchipudi</a>
 <div class="sub-dropdown">
-<button class="folk-btn">
-              Folk ▸
-            </button>
+<button class="folk-btn" type="button">Folk &#9656;</button>
 <div class="sub-dropdown-content">
-<a href="tfolk.html">
-                Traditional Folk
-              </a>
-<a href="vfolk.html">
-                Village Folk
-              </a>
+<a href="tfolk.html">Traditional Folk</a>
+<a href="vfolk.html">Village Folk</a>
 </div>
 </div>
 </div>
 </div>
-<a href="gallery.html">
-        Gallery
-      </a>
-<a class="active" href="events.html">
-
-        Events
-
-      </a>
-<a href="contactus.html">
-        Contact
-      </a>
-<a class="enquire-btn" href="query.html">
-
-        Enquire Now
-
-      </a>
+<a href="gallery.html">Gallery</a>
+<a class="active" href="events.html">Events</a>
+<a href="contactus.html">Contact</a>
+<a class="enquire-btn" href="query.html">Enquire Now</a>
 </div>
+<a class="mobile-enquire-btn enquire-btn" href="query.html">Enquire</a>
+<button aria-label="Toggle navigation menu" class="nav-toggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
 </nav>
 <!-- HERO -->
 <section class="events-hero">
 <div>
+<p class="events-kicker">Stage performances and cultural programs</p>
 <h1>
-        Our Events
+        Events that bring practice to the stage.
       </h1>
 <p>
-        Celebrating culture, tradition,
-        devotion, and artistic excellence
-        through vibrant dance events.
+        Celebrating culture, devotion, discipline, and artistic excellence through classical and folk dance presentations.
       </p>
+<div class="events-hero-actions">
+<a href="query.html">Invite the academy</a>
+<a href="gallery.html">View gallery</a>
+</div>
 </div>
 </section>
 <!-- EVENTS -->
 <section class="events-section">
+<div class="events-section-header">
+<p class="events-kicker">Past events</p>
 <h2 class="section-title">
-      Past Events
+      Moments from recent performances
     </h2>
+<p>Students perform in temple programs, cultural gatherings, public events, and academy celebrations with steady preparation and stage discipline.</p>
+</div>
 <div class="events-grid">
 <div class="event-card">
-<img src="assets/images/images/e1.jpeg"/>
+<img alt="Students performing at a temple cultural event" src="assets/images/images/e1.jpeg"/>
 <div class="event-content">
+<span class="event-tag">Temple event</span>
 <h3>
             Temple Cultural Event
           </h3>
@@ -98,8 +88,9 @@
 </div>
 </div>
 <div class="event-card">
-<img src="assets/images/images/e2.jpeg"/>
+<img alt="Classical group presentation on stage" src="assets/images/images/e2.jpeg"/>
 <div class="event-content">
+<span class="event-tag">Classical stage</span>
 <h3>
             Classical Group Presentation
           </h3>
@@ -111,8 +102,9 @@
 </div>
 </div>
 <div class="event-card">
-<img src="assets/images/images/g1.jpeg"/>
+<img alt="Students at annual dance celebrations" src="assets/images/images/g1.jpeg"/>
 <div class="event-content">
+<span class="event-tag">Annual celebration</span>
 <h3>
             Annual Dance Celebrations
           </h3>
@@ -124,8 +116,9 @@
 </div>
 </div>
 <div class="event-card">
-<img src="assets/images/images/g4.jpeg"/>
+<img alt="Public cultural awareness program performance" src="assets/images/images/g4.jpeg"/>
 <div class="event-content">
+<span class="event-tag">Public program</span>
 <h3>
             Public Cultural Awareness Program
           </h3>
@@ -138,14 +131,24 @@
 </div>
 </div>
 </section>
-<section class="insta-section">
+<section class="insta-section events-instagram">
+<div class="events-insta-inner">
+<div class="events-insta-copy">
+<p class="events-kicker">Social updates</p>
 <h2>
     Follow Our Instagram
   </h2>
+<p>See rehearsal clips, stage memories, student moments, and new announcements from the academy.</p>
+</div>
+<div class="events-insta-widget">
 <div class="taggbox" data-website="1" data-widget-id="325954" style="width:100%;height:100%;overflow:auto;"></div><script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script>
+</div>
+</div>
 </section>
 <!-- CONTACT -->
-<section class="contact-section">
+<section class="contact-section event-contact-section">
+<div class="event-contact-inner">
+<p class="events-kicker">Bookings and invitations</p>
 <h2>
       For Events Contact
     </h2>
@@ -156,23 +159,57 @@
       contact us directly.
     </p>
 <div class="numbers">
-<div class="number-box">
+<a class="number-box" href="tel:+916302255025">
         6302255025
-      </div>
-<div class="number-box">
+      </a>
+<a class="number-box" href="tel:+919966716740">
         9966716740
-      </div>
-<div class="number-box">
+      </a>
+<a class="number-box" href="tel:+918143717637">
         8143717637
-      </div>
+      </a>
+</div>
 </div>
 </section>
 <!-- FOOTER -->
-<footer>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-brand">
+<img alt="Lalitha Nrutya Kalakshetram dancer logo" src="assets/images/images/logo without text.png"/>
+<div>
+<strong>Lalitha Nrutya Kalakshetram</strong>
+<span>Kuchipudi &amp; Folk Dance Academy</span>
+</div>
+</div>
+<div class="footer-links" aria-label="Footer navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="kuchipudi.html">Kuchipudi</a>
+<a href="tfolk.html">Traditional Folk</a>
+<a href="vfolk.html">Village Folk</a>
+<a href="gallery.html">Gallery</a>
+<a href="events.html">Events</a>
+<a href="contactus.html">Contact</a>
+</div>
+<div class="footer-contact">
+<a href="tel:+916302255025">+91 6302255025</a>
+<a href="https://wa.me/916302255025" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+<span>Vijayawada, Tadepalli, and Mangalagiri</span>
+</div>
+</div>
+<div class="footer-bottom">&copy; 2026 Lalitha Nrutya Kalakshetram. All Rights Reserved.</div>
+</footer>
+<script src="assets/js/site-animations.js"></script>
+<script>
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-    © 2026 Lalitha Nrutya Kalakshetram |
-    All Rights Reserved
-
-  </footer>
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("mobile-active");
+    navToggle.classList.toggle("active");
+  });
+}
+</script>
 </body>
 </html>
